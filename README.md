@@ -1,1 +1,3 @@
-# A FAIRE : Ajouter un fichier ".gitignore"
+# Projet Collaboratif
+ 
+ A FAIRE : Ajouter un fichier ".gitignore"
