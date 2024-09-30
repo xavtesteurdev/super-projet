@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cours HTML</title>
+
+    <!-- Insérer l'icône logo HTML.png qui se trouve dans le repertoire "images" dans l'onglet de la page "Cours HTML" -->
+    <link rel="icon" href="./images/Logo HTML.png" type="image/png" />
+  </head>
+
+  <body>
+    <!-- Créer une balise <nav> et y insérer une liste à puce avec les élts suivants : "Accueil", "Boutique" et "Formulaire" -->
+    <nav>
+      <ul>
+        <li>Accueil</li>
+        <li>Boutique</li>
+        <li>Formulaire</li>
+      </ul>
+    </nav>
+
+    <!-- Créer une balise <header> -->
+    <header>
+      <!-- Y insérer un h1 "ceci est le titre principal." Rmq : Il est recommandé de n'utiliser qu'un seul h1 par page, c'est important pour le référencement du site.  -->
+      <h1>Ceci est le titre principal.</h1>
+      <!-- Créer un paragraphe et mettre son contenu en gras -->
+      <p><strong>Contenu du paragraphe en gras.</strong></p>
+      <!-- Créer un paragraphe et mettre son contenu en italique -->
+      <p><em>Contenu du paragraphe en italique.</em></p>
+      <!-- Créer un paragraphe en utilisant le lorem avec 30 mots. -->
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est ipsam
+        veritatis itaque quasi mollitia omnis atque non tenetur fugiat aliquam.
+        Exercitationem quam praesentium quaerat repellat, dignissimos voluptates
+        neque inventore fugit!
+      </p>
+    </header>
+
+    <!-- Créer une balise <main> -->
+    <main>
+      <!-- Créer une balise <section> dans <main> -->
+      <section>
+        <!-- Créer un titre <h2> appelé "Liste numérotée". -->
+        <h2>Liste numérotée</h2>
+        <!-- Créer une ordered List avec les elts "Liste n°1", "Liste n°2" et "Liste n°3".-->
+        <ol>
+          <li>Liste n°1</li>
+          <li>Liste n°2</li>
+          <li>Liste n°3</li>
+        </ol>
+      </section>
+
+      <!-- Créer une nouvelle section que l'on utlisera pour mettre une image et un tableau -->
+      <section>
+        <!-- Y mettre un <h3> "Image en HTML". -->
+        <h3>Image en HTML</h3>
+        <!-- Insérer l'image "chemin de campagne" et lui mettre via un attribut HTML une hauteur de 200px -->
+        <img
+          src="./images/Chemin_de_campagne.webp"
+          alt="Chemin_de_campagne"
+          height="200px"
+        />
+
+        <!-- Créer une <div> -->
+        <div>
+          <!-- Créer un <h4> appelé tableau -->
+          <h4>Tableau</h4>
+          <!-- Créer un tableau avec une bordure de 4px et les cases espacées de 10px-->
+          <table border="4px" cellpadding="10px">
+            <!-- Créer un en-tête pour le tableau -->
+            <thead>
+              <!-- Créer une ligne dans ce tableau composée de 3 colonnes  contenant "Colonne 1", "Colonne 2" et "Colonne 3"-->
+              <tr>
+                <th>Colonne 1</th>
+                <th>Colonne 2</th>
+                <th>Colonne 3</th>
+              </tr>
+            </thead>
+            <!-- Créer le corps du tableau -->
+            <tbody>
+              <!-- Créer une première ligne avec 3 cellules (cellule 1, 2 et 3) -->
+              <tr>
+                <td>Cellule 1</td>
+                <td>Cellule 2</td>
+                <td>Cellule 3</td>
+              </tr>
+              <!-- Créer une seconde ligne avec 3 cellules (cellule 4, 5 et 6) -->
+              <tr>
+                <td>Cellule 4</td>
+                <td>Cellule 5</td>
+                <td>Cellule 6</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Créer une <div que l'on va utiliser pour étudier les liens> -->
+        <div>
+          <!-- Créer un <h5> appelé "Les liens" -->
+          <h5>Les liens</h5>
+          <!-- Créer un lien vers le site"https://htmlcheatsheet.com". Le site doit s'ouvrir dans une autre page. -->
+          <a href="https://htmlcheatsheet.com" target="_blank"
+            >HTML Cheat Sheet</a
+          >
+        </div>
+
+        <!-- Créer une div que l'on va utiliser pour étudier les videos -->
+        <div>
+          <!-- Créer un <h2> appelé "Vidéos" et y insérer une icône récupérée sur le site Html Cheat Sheet. Rmq : Faire attention pour les icônes si on utilise la balise <i>, l'icône sera en italique. On peut régler ce problème avec le CSS. Pour tester insérer 2x le même icône, une fois avec <i> et à côté avec <span>-->
+          <h6><i>&#128578;</i><span>&#128578;</span> Vidéos</h6>
+          <!-- Créer un lien pour le site pixabay qui propose des photos et des videos libre de droit (https://pixabay.com/) -->
+          <a href="https://pixabay.com" target="_blank">Pixabay</a>
+          <!-- Mettre la vidéo "bird.mp4" qui se trouve dans le répertoire Videos sur la page web. Changer sa hauteur à 200px, faire en sorte qu'elle se joue automatiquement, qu'il n'y ai pas de son  et qu'elle boucle. -->
+          <p>
+            <video
+              src="./Videos/bird.mp4"
+              autoplay
+              height="200px"
+              muted
+              loop
+            ></video>
+          </p>
+        </div>
+      </section>
+
+      <!-- Créer une nouvelle section que l'on va utiliser pour étudier les formulaires -->
+      <section>
+        <!-- Faire un <h2> Les formulaires -->
+        <h2>Les formulaires</h2>
+        <!-- Créer la balise qui va anoncer les formulaires, l'attribut "action" va indiquer où iront les données une fois que l'on aura soumis notre formulaire.-->
+        <form action="">
+          <!-- Créer une balise <label> qui renseignera l'utilisateur sur ce que l'on attend de lui pour le <input> qui suit. Le <input> et le <label> doivent être connecté ensemble. Pour cela on renseigne avec la même valeur l'attribut for="" de <label> et le id="" de  <input>. -->
+          <label for="name">Nom : </label>
+          <!-- Créer un <input> de type texte. L'input est un elt dans lequel on pourra inscrire des données. Indiquer dans le champ input à renseigner ce que l'on attend de l'utilisateur, ici "Tapez votre nom de famille"-->
+          <input
+            type="text"
+            id="name"
+            placeholder="Tapez votre nom de famille"
+          />
+          <br /><br />
+          <!-- Créer un <input> de type number pour demander l'âge de l'utilisateur. Renseigner son label et son placeholder. On veut que la valeur de base de cet <input> soit 18 -->
+          <label for="age">Age : </label>
+          <input
+            type="number"
+            id="age"
+            placeholder="Renseignez votre âge"
+            value="18"
+          />
+          <br /><br />
+          <!-- Créer un <input> de type date pour demander la date de naissance de l'utilisateur. Renseigner son label et son placeholder -->
+          <label for="birth">Date de naissance : </label>
+          <input
+            type="date"
+            id="birth"
+            placeholder="Indiquez votre date de naissance"
+          />
+          <br /><br />
+          <!-- Créer un menu déroulant. On veut le genre de son utlisateur (Homme/Femme/Autre). On veut que cela soit femme qui soit sélectionnée par défaut. Renseigner le <label> -->
+          <label for="gender">Homme/Femme/Autre : </label>
+          <select name="" id="gender">
+            <option value="men">Homme</option>
+            <option value="woman" selected="selected">Femme</option>
+            <option value="other">Autre</option>
+          </select>
+          <br /><br />
+          <!-- Créer un champ de formulaire avec des boutons à cocher demandant de sélectionner son animal préféré parmis 3 propositions (Chien, chat et poisson). Il est conseillé de le mettre dans une <div>.  Rmq: l'attribut name="" doit avoir la même valeur. On veut que le bouton radio "Chat" soit sélectionné par défaut. -->
+          <div>
+            <p>Quel est votre animal préféré ?</p>
+            <label for="fish">Poisson : </label>
+            <input type="radio" name="type" id="fish" />
+            <label for="dog">Chien : </label>
+            <input type="radio" name="type" id="dog" />
+            <label for="cat">Chat : </label>
+            <input type="radio" name="type" id="cat" checked />
+          </div>
+          <br />
+          <!-- Créer un formulaire zone de texte indiquant "Laisser un commentaire..."-->
+          <textarea placeholder="Laisser un commentaire..."></textarea>
+          <br /><br />
+          <!-- Créer un formulaire pour indiquer que l'on accepte les conditions générales -->
+          <label for="cgv">Acceptez les conditions générales</label>
+          <input type="checkbox" id="cgv" />
+          <br /><br />
+          <!-- Créer un bouton "valider". Lorsque l'on appuie sur un bouton de type="submit", on déclenche l'atribut action="" qui se trouve dans la balise <form>. -->
+          <input type="submit" />
+        </form>
+      </section>
+
+      <!-- Créer une ancre pour que lorsq'on clique sur la puce "Formulaire" de <nav> on arrive directement au début de celui-ci -->
+    </main>
+
+    <br />
+    <!-- Créer une balise <footer> -->
+    <footer>
+      <!-- Créer un lien hypertexte qui permet d'envoyer un mail sur son adresse perso en ouvrant la messagerie -->
+      <a href="mailto:test@gmail.com">Envoyez-moi un mail</a>
+      <br /><br />
+      <!-- Créer un lien qui permet de télécharger le fichier "notice.txt" -->
+      <a href="./notice.txt" download="notice">Télecharger la notice</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
